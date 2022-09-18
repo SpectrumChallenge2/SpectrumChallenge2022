@@ -56,7 +56,7 @@ class Agent:
         self.set_init()
         self.load_model()
         while True:
-            observation = torch.Tensor(self._observation).type(torch.float32).to(self._device)
+            observation = torch.Tensor(self._observation).type(torch.float32)
             logits, dist, prob = self._actor(observation)
             action_index = torch.argmax(prob)
             action_dict = self.convert_action_index_to_dict(action_index)
