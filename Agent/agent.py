@@ -15,8 +15,8 @@ class Agent:
         self._env = environment
         self._discount_factor = discount_factor
         self._dnn_learning_rate = dnn_learning_rate
-        self._num_freq_channel = 4
-        self._max_num_unit_packet = 2
+        self._num_freq_channel = 6
+        self._max_num_unit_packet = 4
         self._sta_list = list(range(0, 8))
         self._observation = np.zeros(self._num_freq_channel)
         self._num_freq_channel_combination = 2 ** self._num_freq_channel - 1
