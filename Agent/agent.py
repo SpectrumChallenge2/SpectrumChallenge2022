@@ -201,5 +201,5 @@ if __name__ == "__main__":
 
     # When submitting, the training part should be excluded,
     # and it should be submitted in a form that can be evaluated by loading the trained model like agent.test()
-    agent.train(num_episode=1000, run_time=100000)
+    agent.train(num_episode=100, run_time=100000)
     agent.test(500000)
